@@ -1,13 +1,10 @@
 ## AsciiDuino
 
-Library that makes displaying shapes/frames on RainbowDuino LED Matrix 
-easy using ASCII pictures as source input.
+Library that makes displaying shapes/frames on RainbowDuino LED Matrix easy using ASCII pictures as source input.
 
-Rainbowduino makes it easy to utilize an 8x8 (typically) LED matrix.  
-It can draw lines, shapes and pixels.
+Rainbowduino makes it easy to utilize an 8x8 (typically) LED matrix. It can draw lines, shapes and pixels.
 
-This library adds ability to define quick shapes using a simple ASCII arrays, which visually represent
-what the LED matrix will show.
+This library adds ability to define quick shapes using a simple ASCII arrays, which visually represent what the LED matrix will show.
 
 ## Usage
 
