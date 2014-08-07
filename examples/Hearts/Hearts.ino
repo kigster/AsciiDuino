@@ -79,7 +79,7 @@ void loop() {
 	matrix.animate(
 			hearts,
 			sizeof(hearts) / sizeof(char *),
-			(uint32_t)((rand() % 8 + 1) * 0x10), (uint16_t)1000);
+			(uint32_t)((rand() % 8 + 1) * 0x100000), (uint16_t)1000);
 }
 
 

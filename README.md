@@ -25,6 +25,8 @@ You have two main API calls to work with (at the moment :)
 
 ## Example
 
+![Hearts Example](examples/Hearts/Hearts.jpg)
+
 ```c++
 
 #include <Rainbowduino.h>
@@ -60,7 +62,7 @@ void loop() {
   matrix.animate(
       hearts,
       sizeof(hearts) / sizeof(char *),  // number of "images" in the array
-      0xFF0000,                         // 32-bit color, this one is red                          
+      0x100000,                         // 32-bit color, this one is red                          
       (uint16_t)1000);                  // delay between frames (ms)
 }
 ```
