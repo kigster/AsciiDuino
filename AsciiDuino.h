@@ -19,7 +19,7 @@ public:
 	void init(void);
 
 	/*
-	 * Draw a single frame defined by a string pattern.  "." in the patter is an empty
+	 * Draw a single frame defined by a string pattern.  "." in the pattern is an empty
 	 * cell, while "X" is the color cell. Only one color is currently supported per frame.
 	 */
 	void frame(const char* pattern, uint32_t color);
