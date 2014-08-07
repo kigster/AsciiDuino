@@ -59,11 +59,16 @@ void setup() {
 }
 
 void loop() {
-  matrix.animate(
-      hearts,
-      sizeof(hearts) / sizeof(char *),  // number of "images" in the array
-      0x100000,                         // 32-bit color, this one is red                          
-      (uint16_t)1000);                  // delay between frames (ms)
+  matrix.animate(hearts,
+  
+      // number of "images" in the array
+      sizeof(hearts) / sizeof(char *),
+      
+      // 32-bit color, this one is bright red
+      0xFF0000,
+                               
+      // delay between frames (ms)                          
+      (uint16_t)1000);                  
 }
 ```
 

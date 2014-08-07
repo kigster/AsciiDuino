@@ -72,14 +72,15 @@ const char *hearts[] = {
 
 void setup() {
 	matrix.init();
-	srand(millis());
+	srand(millis()); // initialize random number generator
 }
 
 void loop() {
 	matrix.animate(
 			hearts,
 			sizeof(hearts) / sizeof(char *),
-			(uint32_t)((rand() % 8 + 1) * 0x100000), (uint16_t)1000);
+			((rand() % 8 + 1) * 0x100000), // pick a darker shade of red
+			1000);
 }
 
 
