@@ -1,3 +1,11 @@
+# Eclipse CDT ignores
+**/.cproject
+**/.ino.cpp
+**/.settings
+**/Release
+**/spec.d
+
+
 # Compiled Object files
 *.slo
 *.lo
