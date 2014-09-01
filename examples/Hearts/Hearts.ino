@@ -70,17 +70,33 @@ const char *hearts[] = {
 		"........"
 };
 
+RGBColor red = { {128, 0, 0 }};
+
+/*
+ * Call back that is called every time a pixel is drawn. Adds variation to the
+ * primary color.
+ */
+RGBColor modifyColor(uint8_t x, uint8_t y, char value, RGBColor previousColor) {
+	RGBColor c = previousColor;
+	for (int i = 0; i < 3; i++) {
+		if (c.rgb[i] > 0) {
+			c.rgb[i] = c.rgb[i] + rand() % 32;
+		}
+	}
+	return c;
+}
+
 void setup() {
 	matrix.init();
-	srand(millis()); // initialize random number generator
 }
 
 void loop() {
 	matrix.animate(
 			hearts,
 			sizeof(hearts) / sizeof(char *),
-			((rand() % 8 + 1) * 0x100000), // pick a darker shade of red
-			1000);
+			red,
+			1000,
+			&modifyColor);
 }
 
 
